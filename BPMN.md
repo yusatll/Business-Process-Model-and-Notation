@@ -69,17 +69,31 @@ Akış elemanlarını birbirine bağlar, ilişkilendirir. Üç tane çeşidi var
  # BPMN ÖRNEK
  Aşağıdaki resimde yemek siparişi verirken yaşanan olayları BPMN diyagramında basitçe gösterilmiştir.  
 Bu diyagramda gerçekleşen olaylar:  
-  1. Müşteri restoranı arar  
-  2. Kasiyer telefona cevap verir  
-  3. Müşteri restoranın yoğunluğu ile ilgili bilgi alır  
-  4. Siparişin gelme süresine göre müşteri karar verir  
-  5. Siparişin gelmesi çok uzun sürerse sipariş vermiyor  
-  6. Sipariş süresi kısa ise siparişini veriyor  
-  7. Kasiyer siparişi alıyor  
-  8. Şef siparişi hazırlıyor  
-  9. Şef siparişi paketleyip kuryeye veriyor  
-10.Kurye siparişi alıp müşteriye götürüyor  
-11.Müşteri siparişi alıp parasını ödüyor  
-12.Kurye parayı alıp kendi akış diyagramını sonlandırıyor  
-13.Müşteri siparişi yiyip kendi akış diyagramını sonlandırıyor  
+  01. Müşteri restoranı arar  
+  02. Kasiyer telefona cevap verir  
+  03. Müşteri restoranın yoğunluğu ile ilgili bilgi alır  
+  04. Siparişin gelme süresine göre müşteri karar verir  
+  05. Siparişin gelmesi çok uzun sürerse sipariş vermiyor  
+  06. Sipariş süresi kısa ise siparişini veriyor  
+  07. Kasiyer siparişi alıyor  
+  08. Şef siparişi hazırlıyor  
+  09. Şef siparişi paketleyip kuryeye veriyor  
+  10.Kurye siparişi alıp müşteriye götürüyor  
+  11.Müşteri siparişi alıp parasını ödüyor  
+  12.Kurye parayı alıp kendi akış diyagramını sonlandırıyor  
+  13.Müşteri siparişi yiyip kendi akış diyagramını sonlandırıyor  
 
+![Örnek](http://ayusatelli.com/wp-content/uploads/2019/09/pizza-sipari%C5%9F-1-1024x545.jpg "Örnek")  
+  
+# Kaynakça  
+  
+[LucidChart 1](https://www.lucidchart.com/pages/bpmn-bpmn-2.0-tutorial)  
+[LucidChart 2](https://www.lucidchart.com/pages/bpmn-symbols-explained)  
+  
+Online Diyagram Çizmek için:  
+[Çizim LucidChart](https://www.lucidchart.com/pages/bpmn-bpmn-2.0-tutorial#section_1)  
+ve  
+[Draw.io](https://www.draw.io)  
+  
+Pizza Sipariş Örneği:  
+  [Pizza Sipariş](https://www.lucidchart.com/blog/diagrams-for-dummies-a-BPMN-tutorial)
