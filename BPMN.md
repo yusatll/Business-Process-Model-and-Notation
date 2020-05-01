@@ -26,3 +26,15 @@ Her grup kendisine has eylemleri belirtmek için farklı sembollere sahiptir. Ş
   -> Activity: Kenarları hafif yuvarlaklaştırılmış dikdörtgen sembolü ile gösterilirler. Bunlar gerçekleştirilen iş süreçleridir (business process). İş ile ilgili kısa bilgi, rapor gibi bilgiler içinde barındırır.
   
   ![Activity](http://ayusatelli.com/wp-content/uploads/2019/08/activ2.png)
+
+  -> Gateways: Paralel kenar başka bir değişle elmas şeklinde gösterilir. Bir activity farklı bir iş süreci akışına geçmesi gerekiyorsa bu geçitler kullanılır. Birkaç farklı çeşidi vardır.
+  
+  ![Gateways](http://ayusatelli.com/wp-content/uploads/2019/09/gateways.png)
+  
+   ---->  Exclusive: Akışın durumunu değerlendirir ve bir veya daha fazla yola böler. Akış bu yollardan sadece birine gidebilir. Örneğin yöneticinin onayı ile rapor yazılır, onay vermezse rapor yazılmaz.  
+   ---->  Event-based: Activity’nin gerçekleşip gerçekleşmeme durumunu kontrol eder. Mesela yazılımcının ofise gelinceye kadar mail göndermemek için bekleyip, gelmezse patrona mail gönderebilirsiniz.  
+   ---->  Parallel: Akışı iki veya daha fazla yola böler. Ancak akış bu yollardan hepsine aynı anda devam edebilir.  
+   ---->   Inclusive: Process akışını bir veya daha fazla akışa böler.  
+   ---->   Exclusive event-based: Sonraki olayın gerçekleşmesiyle beraber yeni bir process instance (süreç örneği) başlatır.  
+   ---->   Complex: En karmaşık akışlar için kullanılır. Diğerlerinin uygun olmadığı yerlerde genellikle bu gateway kullanılır.  
+   ---->   Parallel event-based: birden fazla işlemin aynı anda gerçekleşmesini sağlar. Bu işlemler olaya bağlıdır.  
