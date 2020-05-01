@@ -4,3 +4,4 @@ Business Process Model and Notation Türkçe Kaynak
 Eksikleri olabilir. Eksik görüdüğünüz yerleri söylerseniz düzeltebilirim.  
 Teşekkürler
 
+![resimdeneme](http://ayusatelli.com/wp-content/uploads/2019/08/event.png)
