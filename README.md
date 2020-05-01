@@ -22,3 +22,6 @@ Her grup kendisine has eylemleri belirtmek için farklı sembollere sahiptir. Ş
   Mesela daire içinde saat varsa bu tarih veya saati belirtir veya üçgen varsa signal (sinyal) sembolüdür ve farklı işlemler (process) arasında ileşimi sağlar. İçerisinde “ok” varsa bu bir alt process’i gösterir, gibi örnekler verilebilir.
 
 ![Event](http://ayusatelli.com/wp-content/uploads/2019/08/event.png)
+  -> Activity: Kenarları hafif yuvarlaklaştırılmış dikdörtgen sembolü ile gösterilirler. Bunlar gerçekleştirilen iş süreçleridir (business process). İş ile ilgili kısa bilgi, rapor gibi bilgiler içinde barındırır.
+  
+  ![Activity](http://ayusatelli.com/wp-content/uploads/2019/08/activ2.png)
