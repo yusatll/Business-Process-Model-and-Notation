@@ -1,5 +1,5 @@
 # Business-Process-Model-and-Notation  
-Şirketlerde yazılım departmanlarında yazılımın nasıl kullanılacağını gösteren flowchartlardır. Türkçe bir kaynak oluşturmak adına paylaşıyorum.
+Şirketlerde yazılım departmanlarında yazılımın nasıl kullanılacağını gösteren flowchartlardır. Türkçe bir kaynak oluşturmak adına paylaşıyorum. [Kendi sitem](http://ayusatelli.com/index.php/bpmn-nedir/)de de bulabilirsiniz. 
 Eksikleri olabilir. Eksik görüdüğünüz yerleri söylerseniz düzeltebilirim.  
 Teşekkürler
 
