@@ -17,6 +17,8 @@ Her grup kendisine has eylemleri belirtmek için farklı sembollere sahiptir. Ş
   
   1) Flow Objects: Flow chart (iş akışı) oluşturmak için birbirine bağlanan nesnelerdir. Bir sürecin davranışını tanımlayan temel unsulardır. Üç çeşit unsur vardır: Event (olay), Activity (aktivite), Gateway (geçit).  
 
-    -> Event: Daire sembolü ile gösterilirler. Gerçekleşen bir olayı temsil ederler. Daire içinde olayla ilgili bir bilgi gösterilir.
+  -> Event: Daire sembolü ile gösterilirler. Gerçekleşen bir olayı temsil ederler. Daire içinde olayla ilgili bir bilgi gösterilir.
   
-    Mesela daire içinde saat varsa bu tarih veya saati belirtir veya üçgen varsa signal (sinyal) sembolüdür ve farklı işlemler (process) arasında ileşimi sağlar. İçerisinde “ok” varsa bu bir alt process’i gösterir, gibi örnekler verilebilir.
+  Mesela daire içinde saat varsa bu tarih veya saati belirtir veya üçgen varsa signal (sinyal) sembolüdür ve farklı işlemler (process) arasında ileşimi sağlar. İçerisinde “ok” varsa bu bir alt process’i gösterir, gibi örnekler verilebilir.
+
+![Event](http://ayusatelli.com/wp-content/uploads/2019/08/event.png)
