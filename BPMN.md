@@ -15,26 +15,71 @@ Genellikle soldan sağa olarak çizilen diyagramlar yukarıdan aşağı olarak d
 
 Her grup kendisine has eylemleri belirtmek için farklı sembollere sahiptir. Şimdi bu nesnelere ve özelliklere bakalım:
   
-  1) Flow Objects: Flow chart (iş akışı) oluşturmak için birbirine bağlanan nesnelerdir. Bir sürecin davranışını tanımlayan temel unsulardır. Üç çeşit unsur vardır: Event (olay), Activity (aktivite), Gateway (geçit).  
+  **1) Flow Objects:**  
+  Flow chart (iş akışı) oluşturmak için birbirine bağlanan nesnelerdir. Bir sürecin davranışını tanımlayan temel unsulardır. Üç çeşit unsur vardır: Event (olay), Activity (aktivite), Gateway (geçit).  
 
-  -> Event: Daire sembolü ile gösterilirler. Gerçekleşen bir olayı temsil ederler. Daire içinde olayla ilgili bir bilgi gösterilir.
+  *-> Event:* Daire sembolü ile gösterilirler. Gerçekleşen bir olayı temsil ederler. Daire içinde olayla ilgili bir bilgi gösterilir.
   
   Mesela daire içinde saat varsa bu tarih veya saati belirtir veya üçgen varsa signal (sinyal) sembolüdür ve farklı işlemler (process) arasında ileşimi sağlar. İçerisinde “ok” varsa bu bir alt process’i gösterir, gibi örnekler verilebilir.
 
-![Event](http://ayusatelli.com/wp-content/uploads/2019/08/event.png)  
+![Event](http://ayusatelli.com/wp-content/uploads/2019/08/event.png "Event")  
 
-  -> Activity: Kenarları hafif yuvarlaklaştırılmış dikdörtgen sembolü ile gösterilirler. Bunlar gerçekleştirilen iş süreçleridir (business process). İş ile ilgili kısa bilgi, rapor gibi bilgiler içinde barındırır.
+  *-> Activity:* Kenarları hafif yuvarlaklaştırılmış dikdörtgen sembolü ile gösterilirler. Bunlar gerçekleştirilen iş süreçleridir (business process). İş ile ilgili kısa bilgi, rapor gibi bilgiler içinde barındırır.
   
-  ![Activity](http://ayusatelli.com/wp-content/uploads/2019/08/activ2.png)
+  ![Activity](http://ayusatelli.com/wp-content/uploads/2019/08/activ2.png "Activity")
 
-  -> Gateways: Paralel kenar başka bir değişle elmas şeklinde gösterilir. Bir activity farklı bir iş süreci akışına geçmesi gerekiyorsa bu geçitler kullanılır. Birkaç farklı çeşidi vardır.
+  *-> Gateways:* Paralel kenar başka bir değişle elmas şeklinde gösterilir. Bir activity farklı bir iş süreci akışına geçmesi gerekiyorsa bu geçitler kullanılır. Birkaç farklı çeşidi vardır.
   
-  ![Gateways](http://ayusatelli.com/wp-content/uploads/2019/09/gateways.png)
+  ![Gateways](http://ayusatelli.com/wp-content/uploads/2019/09/gateways.png "Gateways")
   
-   ---->  Exclusive: Akışın durumunu değerlendirir ve bir veya daha fazla yola böler. Akış bu yollardan sadece birine gidebilir. Örneğin yöneticinin onayı ile rapor yazılır, onay vermezse rapor yazılmaz.  
-   ---->  Event-based: Activity’nin gerçekleşip gerçekleşmeme durumunu kontrol eder. Mesela yazılımcının ofise gelinceye kadar mail göndermemek için bekleyip, gelmezse patrona mail gönderebilirsiniz.  
-   ---->  Parallel: Akışı iki veya daha fazla yola böler. Ancak akış bu yollardan hepsine aynı anda devam edebilir.  
-   ---->   Inclusive: Process akışını bir veya daha fazla akışa böler.  
-   ---->   Exclusive event-based: Sonraki olayın gerçekleşmesiyle beraber yeni bir process instance (süreç örneği) başlatır.  
-   ---->   Complex: En karmaşık akışlar için kullanılır. Diğerlerinin uygun olmadığı yerlerde genellikle bu gateway kullanılır.  
-   ---->   Parallel event-based: birden fazla işlemin aynı anda gerçekleşmesini sağlar. Bu işlemler olaya bağlıdır.  
+   *---->  Exclusive:* Akışın durumunu değerlendirir ve bir veya daha fazla yola böler. Akış bu yollardan sadece birine gidebilir. Örneğin yöneticinin onayı ile rapor yazılır, onay vermezse rapor yazılmaz.  
+   *---->  Event-based:* Activity’nin gerçekleşip gerçekleşmeme durumunu kontrol eder. Mesela yazılımcının ofise gelinceye kadar mail göndermemek için bekleyip, gelmezse patrona mail gönderebilirsiniz.  
+   *---->  Parallel:* Akışı iki veya daha fazla yola böler. Ancak akış bu yollardan hepsine aynı anda devam edebilir.  
+   *---->   Inclusive:* Process akışını bir veya daha fazla akışa böler.  
+   *---->   Exclusive event-based:* Sonraki olayın gerçekleşmesiyle beraber yeni bir process instance (süreç örneği) başlatır.  
+   *---->   Complex:* En karmaşık akışlar için kullanılır. Diğerlerinin uygun olmadığı yerlerde genellikle bu gateway kullanılır.  
+   *---->   Parallel event-based:* birden fazla işlemin aynı anda gerçekleşmesini sağlar. Bu işlemler olaya bağlıdır.  
+
+  
+  **2) Connecting Objects (Bağlantı nesneleri):**
+
+Akış elemanlarını birbirine bağlar, ilişkilendirir. Üç tane çeşidi vardır: sequence flows, message flows ve associations   
+  ![Connecting](http://ayusatelli.com/wp-content/uploads/2019/08/connect.png "Connecting Objects")  
+*1. Sequence Flows:* İşlemlerin gerçekleştirildiği sırayı gösterir.  
+*2. Message Flows:* Mesajların belirtilen sınırlar arasında akışını gösterir.  
+*3. Associations:* Text(metin), arctifact (yapay nesne), veri ve flow objects(akış nesneleri) arasındaki ilişkiyi gösterir.  
+  
+ **3) Swimlines – Pool:**
+ 
+ Büyük dikdörtgen şeklinde gösterilir. Diyagramın özelliklerini düzenlemek için kullanılır. Nesneleri görsel olarak gruplandırır, flow chart’ı kısımlara ayırarak anlaşılmasını kolaylaştırır diyebiliriz.  
+ 
+  ![Swimlines](http://ayusatelli.com/wp-content/uploads/2019/08/pool.png "Swimlines") Yatay veya dikey şekilde olabilir.  
+ 
+ 
+ **4) Artifacts (Yapay Nesneler):**  
+ Oluşturulan modelle ilgili olan ancak süreçteki unsurlarla ilgili olmayan bilgileri temsil eder. Activity (aktiviteleri) sınıflandırır ve diyagramlardaki processes (işlemler) için daha fazla bilgi gösterilmesini, diyagrama daha fazla bilgi dahil etmek için kullanılır. Üç çeşittir: Data object, group, annotation.  
+ 
+  ![Artifacts](http://ayusatelli.com/wp-content/uploads/2019/08/artifactt.png "Artifacts")
+  
+   *-> Data Objects:* Process için gerekli verileri gösterir.  
+   *-> Group:* Farklı activities (aktiviteleri) gruplandırır.  
+   *-> Annotation:* Ek açıklamaların gösterilmesini sağlar.  
+
+ 
+ # BPMN ÖRNEK
+ Aşağıdaki resimde yemek siparişi verirken yaşanan olayları BPMN diyagramında basitçe gösterilmiştir.  
+Bu diyagramda gerçekleşen olaylar:  
+  1. Müşteri restoranı arar  
+  2. Kasiyer telefona cevap verir  
+  3. Müşteri restoranın yoğunluğu ile ilgili bilgi alır  
+  4. Siparişin gelme süresine göre müşteri karar verir  
+  5. Siparişin gelmesi çok uzun sürerse sipariş vermiyor  
+  6. Sipariş süresi kısa ise siparişini veriyor  
+  7. Kasiyer siparişi alıyor  
+  8. Şef siparişi hazırlıyor  
+  9. Şef siparişi paketleyip kuryeye veriyor  
+10.Kurye siparişi alıp müşteriye götürüyor  
+11.Müşteri siparişi alıp parasını ödüyor  
+12.Kurye parayı alıp kendi akış diyagramını sonlandırıyor  
+13.Müşteri siparişi yiyip kendi akış diyagramını sonlandırıyor  
+
